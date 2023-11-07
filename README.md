@@ -1,6 +1,6 @@
 # terraform-aws-vpc-peering
 
-# Terraform-aws-vpc-Peering
+# AWS Infrastructure Provisioning with Terraform-aws-vpc-Peering module
 
 ## Table of Contents
 
@@ -18,13 +18,13 @@ This module is designed for peering two Amazon Virtual Private Clouds (VPCs) usi
 
 ## Usage
 
-- # default
+- Example: default
 
 To use this module, include it in your Terraform configuration. Here is an example snippet:
 
 ```hcl
 module "vpc-peering" {
-  source           = "git::https://github.com/opz0/terraform-aws-vpc-peering.git?ref=v1.0.0"  # Replace with the path to the module source.
+  source           = "git::https://github.com/opz0/terraform-aws-vpc-peering.git?ref=v1.0.0"
   name             = local.name
   environment      = local.environment
   requestor_vpc_id = "vpc-045eae4d6b443a318"
@@ -32,11 +32,11 @@ module "vpc-peering" {
 }
 ```
 
-- # multi-region
+- Example: multi-region
 
 ```hcl
 module "vpc-peering" {
-  source           = "git::https://github.com/opz0/terraform-aws-vpc-peering.git?ref=v1.0.0"  # Replace with the path to the module source.
+  source           = "git::https://github.com/opz0/terraform-aws-vpc-peering.git?ref=v1.0.0"
   name             = "vpc-peering"
   environment      = "prod"
   label_order      = ["environment", "name"]
@@ -47,7 +47,7 @@ module "vpc-peering" {
 }
 ```
 
-## Module Inputs
+Module Inputs
 
 The following inputs can be configured when using this module:
 
@@ -63,6 +63,10 @@ The following inputs can be configured when using this module:
 ## Module Outputs
 
 This module provides no specific outputs.
+- id - The ID of the VPC Peering Connection.
+- accept_status - The status of the VPC Peering Connection request.
+- tags - (Optional) A map of tags to assign to the resource.
+
 
 ## Examples
 For detailed examples on how to use this module, please refer to the 'examples' directory within this repository.
