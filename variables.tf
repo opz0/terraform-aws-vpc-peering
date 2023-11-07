@@ -4,11 +4,6 @@ variable "name" {
   description = "Name  (e.g. `app` or `cluster`)."
 }
 
-variable "application" {
-  type        = string
-  default     = ""
-  description = "Application (e.g. `Opz0`)"
-}
 variable "environment" {
   type        = string
   default     = ""
