@@ -18,10 +18,10 @@ This module is designed for peering two Amazon Virtual Private Clouds (VPCs) usi
 
 ## Usage
 
-- Example: default
-
 To use this module, include it in your Terraform configuration. Here is an example snippet:
+## examples
 
+# Example: default
 ```hcl
 module "vpc-peering" {
   source           = "git::https://github.com/opz0/terraform-aws-vpc-peering.git?ref=v1.0.0"
@@ -32,7 +32,7 @@ module "vpc-peering" {
 }
 ```
 
-- Example: multi-region
+# Example: multi-region
 
 ```hcl
 module "vpc-peering" {
@@ -47,7 +47,7 @@ module "vpc-peering" {
 }
 ```
 
-Module Inputs
+## Module Inputs
 
 The following inputs can be configured when using this module:
 
