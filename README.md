@@ -72,7 +72,7 @@ This module provides no specific outputs.
 For detailed examples on how to use this module, please refer to the 'examples' directory within this repository.
 
 ## License
-This Terraform module is provided under the '[License Name]' License. Please see the [LICENSE](https://github.com/opz0/terraform-aws-vpc-peering/blob/readme/LICENSE) file for more details.
+This Terraform module is provided under the '[License Name]' License. Please see the [LICENSE](https://github.com/opz0/terraform-aws-vpc-peering/blob/master/LICENSE) file for more details.
 
 ## Author
 Your Name
