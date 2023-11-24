@@ -24,7 +24,7 @@ To use this module, include it in your Terraform configuration. Here is an examp
 # Example: default
 ```hcl
 module "vpc-peering" {
-  source           = "git::https://github.com//terraform-aws-vpc-peering.git?ref=v1.0.0"
+  source           = "git::https://github.com/cypik/terraform-aws-vpc-peering.git?ref=v1.0.0"
   name             = local.name
   environment      = local.environment
   requestor_vpc_id = "vpc-045eae4d6b443a318"
@@ -36,7 +36,7 @@ module "vpc-peering" {
 
 ```hcl
 module "vpc-peering" {
-  source           = "git::https://github.com//terraform-aws-vpc-peering.git?ref=v1.0.0"
+  source           = "git::https://github.com/cypik/terraform-aws-vpc-peering.git?ref=v1.0.0"
   name             = "vpc-peering"
   environment      = "prod"
   label_order      = ["environment", "name"]
@@ -72,7 +72,7 @@ This module provides no specific outputs.
 For detailed examples on how to use this module, please refer to the [Examples](https://github.com/cypik/terraform-aws-vpc-peering/tree/master/example) directory within this repository.
 
 ## License
-This Terraform module is provided under the '[License Name]' License. Please see the [LICENSE](https://github.com//terraform-aws-vpc-peering/blob/master/LICENSE) file for more details.
+This Terraform module is provided under the '[License Name]' License. Please see the [LICENSE](https://github.com/cypik/terraform-aws-vpc-peering/blob/master/LICENSE) file for more details.
 
 ## Author
 Your Name
