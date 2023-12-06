@@ -12,6 +12,6 @@ module "vpc-peering" {
 
   name             = local.name
   environment      = local.environment
-  requestor_vpc_id = "vpc-022bcc2b5b68b0dd7"
-  acceptor_vpc_id  = "vpc-0408156477974f013"
+  requestor_vpc_id = "vpc-098ae8ed7cc52cd42"
+  acceptor_vpc_id  = "vpc-0ab206e9e410a0edc"
 }
