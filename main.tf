@@ -10,6 +10,7 @@ module "labels" {
   source      = "git::https://github.com/cypik/terraform-aws-labels.git?ref=v1.0.0"
   name        = var.name
   environment = var.environment
+  repository  = var.repository
   managedby   = var.managedby
   label_order = var.label_order
 
