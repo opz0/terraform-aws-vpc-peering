@@ -18,8 +18,7 @@ This module is designed for peering two Amazon Virtual Private Clouds (VPCs) usi
 
 ## Usage
 
-To use this module, include it in your Terraform configuration. Here is an example snippet:
-## examples
+To use this module, you should have Terraform installed and configured for AWS. This module provides the necessary Terraform configuration for creating AWS resources, and you can customize the inputs as needed. Below is an example of how to use this module## examples
 
 # Example: default
 ```hcl
