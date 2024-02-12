@@ -14,7 +14,7 @@
 
 
 ## Introduction
-This Terraform module creates an AWS vpc-peering along with additional configuration options.
+            This Terraform module creates an AWS vpc-peering along with additional configuration options.
 
 ## Usage
 
