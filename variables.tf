@@ -12,7 +12,7 @@ variable "environment" {
 
 variable "repository" {
   type        = string
-  default     = "https://github.com/cypik/terraform-aws-subnet"
+  default     = "https://github.com/cypik/terraform-aws-vpc-peering"
   description = "Terraform current module repo"
 }
 
