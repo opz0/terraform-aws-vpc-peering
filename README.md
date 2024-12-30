@@ -24,7 +24,7 @@ To use this module, you should have Terraform installed and configured for AWS. 
 ```hcl
 module "vpc-peering" {
   source           = "cypik/vpc-peering/aws"
-  version          ="1.0.1"
+  version          ="1.0.2"
   name             = local.name
   environment      = local.environment
   requestor_vpc_id = "vpc-045eae4d6b443a318"
@@ -37,7 +37,7 @@ module "vpc-peering" {
 ```hcl
 module "vpc-peering" {
   source           = "cypik/vpc-peering/aws"
-  version          ="1.0.1"
+  version          ="1.0.2"
   name             = "vpc-peering"
   environment      = "prod"
   label_order      = ["environment", "name"]
@@ -63,21 +63,21 @@ Replace **MIT** and **Cypik** with the appropriate license and your information.
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.6.6 |
-| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 5.32.1 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.9.5 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | ~> 5.82.2 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | >= 5.32.1 |
-| <a name="provider_aws.peer"></a> [aws.peer](#provider\_aws.peer) | >= 5.32.1 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | ~> 5.82.2 |
+| <a name="provider_aws.peer"></a> [aws.peer](#provider\_aws.peer) | ~> 5.82.2 |
 
 ## Modules
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_labels"></a> [labels](#module\_labels) | cypik/labels/aws | 1.0.1 |
+| <a name="module_labels"></a> [labels](#module\_labels) | cypik/labels/aws | 1.0.2 |
 
 ## Resources
 
@@ -119,6 +119,9 @@ Replace **MIT** and **Cypik** with the appropriate license and your information.
 | Name | Description |
 |------|-------------|
 | <a name="output_accept_status"></a> [accept\_status](#output\_accept\_status) | The status of the VPC peering connection request. |
+| <a name="output_acceptor_routes"></a> [acceptor\_routes](#output\_acceptor\_routes) | The route table IDs associated with the acceptor VPC in the VPC peering connection. |
 | <a name="output_connection_id"></a> [connection\_id](#output\_connection\_id) | VPC peering connection ID. |
+| <a name="output_requestor_routes"></a> [requestor\_routes](#output\_requestor\_routes) | The route table IDs associated with the requester VPC in the VPC peering connection. |
 | <a name="output_tags"></a> [tags](#output\_tags) | A mapping of tags to assign to the resource. |
+| <a name="output_vpc_peering_connection_id"></a> [vpc\_peering\_connection\_id](#output\_vpc\_peering\_connection\_id) | The ID of the VPC peering connection created between two VPCs. |
 <!-- END_TF_DOCS -->
