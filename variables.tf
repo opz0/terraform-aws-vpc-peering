@@ -37,14 +37,11 @@ variable "enable_peering" {
 variable "requestor_vpc_id" {
   type        = string
   description = "Requestor VPC ID."
-
 }
 
 variable "acceptor_vpc_id" {
   type        = string
   description = "Acceptor VPC ID."
-
-
 }
 
 variable "auto_accept" {
@@ -70,4 +67,3 @@ variable "requestor_allow_remote_vpc_dns_resolution" {
   default     = true
   description = "Allow requestor VPC to resolve public DNS hostnames to private IP addresses when queried from instances in the acceptor VPC."
 }
-

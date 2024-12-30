@@ -1,5 +1,5 @@
 provider "aws" {
-  region = "eu-west-1"
+  region = "us-east-2"
 }
 
 locals {
@@ -12,6 +12,6 @@ module "vpc-peering" {
 
   name             = local.name
   environment      = local.environment
-  requestor_vpc_id = "vpc-098ae8ed7cc52cd42"
-  acceptor_vpc_id  = "vpc-0ab206e9e410a0edc"
+  requestor_vpc_id = "  vpc-0a1dfb320888f6bd3"
+  acceptor_vpc_id  = "vpc-05d91dce8d98ad8cc"
 }
